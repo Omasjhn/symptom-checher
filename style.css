@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: goldenrod;
+    display: flex;
+
+}
+
+.center{
+text-align: center;
+margin-top: 20%;
+}
+
+.gender, .age, .symptoms{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.gender input{
+    width: 30px;
+    height: 20px;
+}
+.age input{
+    width: 300px;
+}
+
+button{
+    background-color: bisque;
+    color: black;
+    width: 20%;
+    margin-top: 50px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+}
+@media screen and (min-width:1024px){
+    body{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 30% 30%;
+    }
+
+    .center{
+        margin-top: 0%;
+    }
+}
