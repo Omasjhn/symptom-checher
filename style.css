@@ -1,53 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
-    background-color: goldenrod;
+    background-color: #cccccc;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
-.center{
-text-align: center;
-margin-top: 20%;
+.center {
+    text-align: center;
 }
 
-.gender, .age, .symptoms{
+.gender, .age, .symptoms-input input {
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 24px;
 }
 
-.gender input{
+.gender input {
     width: 30px;
     height: 20px;
 }
-.age input{
-    width: 300px;
+
+.age input {
+    width: 50px;
+    height: 30px;
 }
 
-button{
-    background-color: bisque;
+.label {
+    font-size: 24px;
+}
+
+button {
+    background-color: #f2f2f2;
     color: black;
     width: 20%;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 15px 30px;
     border: none;
     border-radius: 10px;
-    font-size: 17px;
+    font-size: 20px;
 }
-@media screen and (min-width:1024px){
-    body{
+
+.result {
+    margin-top: 15px;
+}
+
+.result p.data {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.result p.disclaimer {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
         text-align: center;
         justify-content: center;
         align-items: center;
-        width: 30% 30%;
+        width: 30%;
     }
 
-    .center{
+    .center {
         margin-top: 0%;
     }
 }
