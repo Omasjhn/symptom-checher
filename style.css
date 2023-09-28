@@ -5,11 +5,12 @@
 }
 
 body {
-    height: 100vh;
     background-color: #cccccc;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    margin-top: 20px;
 }
 
 .center {
@@ -17,7 +18,6 @@ body {
 }
 
 .gender, .age, .symptoms-input input {
-    margin-top: 30px;
     font-size: 24px;
 }
 
@@ -38,7 +38,8 @@ body {
 button {
     background-color: #f2f2f2;
     color: black;
-    width: 20%;
+    width: 90%;
+    max-width: 300px;
     margin-top: 30px;
     padding: 15px 30px;
     border: none;
@@ -59,15 +60,54 @@ button {
     font-size: 18px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     body {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        width: 30%;
+        width: 80%;
+    }
+    
+    .center {
+        margin-left: 80px;
+    }
+    
+    .result {
+        margin-top: 40px;
+        margin-left: 80px; 
     }
 
-    .center {
-        margin-top: 0%;
+    .symptoms-input, .age, .gender {
+        margin-top: 20px; 
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        width: 100%;
+    }
+
+
+.symptoms-input, .age, .gender {
+    margin-top: 20px; 
+}
+
+.label {
+    font-size: 24px;
+}
+
+.result {
+        margin-top: 30px;
+        margin-right: 100px;
+    }
+
+.result p.data{
+        font-size: 25px;
+    }
+
+.result p.disclaimer{
+        font-size: 25px;
+    }
+
+    .gender, .age, .symptoms-input input {
+        font-size: 26px;
     }
 }
